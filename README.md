@@ -9,5 +9,5 @@ $mysql_server = '';
    $mysql_database = '';
    $mysql_table = '';
    
-all you need to do is input the information from your MySQL account between the quotations you see in the above code snippet. 
+all you need to do is input the information from your MySQL account between the quotations you see in the above code snippet. The codes that are contained in this repository are just simple implementation of a member system for your website and more scripts are to be added soon.
 
