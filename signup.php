@@ -1,17 +1,22 @@
 <?php
 $error_message = "error";
-if ($_SERVER['REQUEST_METHOD'] == 'POST')// calls sql database to request for information in database.
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
+// calls sql database to request for information in database.
 {
    $action = isset($_POST['action']) ? $_POST['action'] : '';
-   $database = './mysqldb.php'; // uses a separate php file with mysql information about database, server, etc...
+   $database = './mysqldb.php'; 
+   // uses a separate php file with mysql information about database, server, etc...
    $success_page = 'http://www.domain.com';
 
-   if (!file_exists($database)) // checks the connection and existance of file if doesnt work, go back and change the credentials put into previous script.
+   if (!file_exists($database)) 
+   // checks the connection and existance of file if doesnt work, go back and change the credentials put into previous script.
    {
-      echo 'database error.'; // message incase of connection error.
+      echo 'database error.'; 
+      // message incase of connection error.
       exit;
    }
-   if ($action == 'signup') // action to signup or input information into correctly structure database based on sql schema.
+   if ($action == 'signup') 
+   // action to signup or input information into correctly structure database based on sql schema.
    {
       $newusername = $_POST['username'];
       $newemail = $_POST['email'];
