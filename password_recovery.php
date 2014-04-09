@@ -1,5 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && strlen($_POST['email'] <= 50))
+// uses basic principles of the signup.php to collect information from the database.
 {
    $email = addslashes($_POST['email']);
    $found = false;
@@ -30,6 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && strlen($_POST['email'] <= 50))
          $fullnames[$count] = $fullname;
          $activeaccounts[$count] = $active;
          if ($email == $emailaddress)
+         // takes the information form the previous top lines of the code to get information based on valid entries.
          {
             $found = true;
          }
