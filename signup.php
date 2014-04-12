@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
          fwrite($file, "\r\n");
          fclose($file);
 
-         $mailto = $newemail;
+         $mailto = $newemail; // emails all information to email eocified in the text input field.
          $subject = 'Welcome';
          $message = 'Your account has been made.';
          $message .= "\r\nUsername: ";
