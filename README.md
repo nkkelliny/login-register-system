@@ -13,7 +13,7 @@ all you need to do is input the information from your MySQL account between the 
 
 
 The MIT License (MIT)
-
+========================
 Copyright (c) {2014} {Nasr Kelliny}
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
